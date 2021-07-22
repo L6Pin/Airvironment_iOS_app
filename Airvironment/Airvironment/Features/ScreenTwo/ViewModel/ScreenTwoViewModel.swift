@@ -26,7 +26,7 @@ class ScreenTwoViewModel: NSObject{
             case .success(let measurements):
                 self.measurements = measurements
             case .failure(let error):
-            break
+            print(error)
             }
         }}
     

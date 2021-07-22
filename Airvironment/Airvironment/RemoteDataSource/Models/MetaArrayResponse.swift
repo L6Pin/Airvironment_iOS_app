@@ -18,6 +18,6 @@ class MetaArrayResponse: NSObject, Codable {
     
     enum CodingKeys: String, CodingKey {
         case meta
-        case response = "per_page"
+        case response
     }
 }

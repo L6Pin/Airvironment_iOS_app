@@ -30,7 +30,7 @@ class ScreenTwoViewController: UIViewController {
         observer = viewModel.observe(\.measurements, options: .new) { _, measurements  in
             if let measurements = measurements.newValue{
                 self.tableView.dataSource = self
-                self.tableView.delegate = self
+//                self.tableView.delegate = self
 
             }
             
@@ -56,9 +56,9 @@ extension ScreenTwoViewController: UITableViewDataSource {
     
 }
 
-extension ScreenTwoViewController: UITableViewDelegate {
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        navigationController!.show(ScreenTwoViewController(), sender: nil)
-    }
+//extension ScreenTwoViewController: UITableViewDelegate {
+//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        navigationController!.show(ScreenTwoViewController(), sender: nil)
+//    }
 
-}
+
