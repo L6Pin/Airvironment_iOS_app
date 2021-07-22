@@ -24,10 +24,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                 
                 window?.rootViewController = rootNavigationViewController
                 window?.makeKeyAndVisible()
-        //        rootNavigationViewController.navigationBar.isTranslucent = true
-        //        rootNavigationViewController.navigationBar.shadowImage = UIImage()
-        //        rootNavigationViewController.navigationBar.setBackgroundImage(UIImage(), for: .default)
-        //        rootNavigationViewController.navigationBar.tintColor = .white
+                rootNavigationViewController.navigationBar.isTranslucent = true
+                rootNavigationViewController.navigationBar.shadowImage = UIImage()
+                rootNavigationViewController.navigationBar.setBackgroundImage(UIImage(), for: .default)
+                rootNavigationViewController.navigationBar.tintColor = .white
                 rootNavigationViewController.show(ScreenOneViewController(), sender: nil)
     }
     
