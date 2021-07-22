@@ -1,0 +1,13 @@
+workspace 'Airvironment'
+minimum_deployment_target = 14.1
+
+platform :ios, minimum_deployment_target
+
+target 'Airvironment' do
+	project 'Airvironment'
+	use_frameworks!
+
+	pod 'Alamofire'
+	pod 'Kingfisher'
+
+end
