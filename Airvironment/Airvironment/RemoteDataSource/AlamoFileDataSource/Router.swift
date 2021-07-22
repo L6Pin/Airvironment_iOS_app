@@ -3,7 +3,7 @@ import Alamofire
 
 struct Router {
     
-    public static var baseUrl: URL = URL(string: "https://airvironment.dev")!
+    public static var baseUrl: URL = URL(string: "https://airvironment.live")!
     
     enum Air: URLRequestConvertible {
         case getAll

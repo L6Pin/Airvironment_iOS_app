@@ -13,20 +13,20 @@ class Air: NSObject, Codable {
     var id: Int?
     var created:String?
     var temperature: Float?
-
+    
     init(humidity: Float, pollution:Float, id:Int, created:String, temperature: Float) {
         self.humidity = humidity
         self.pollution = pollution
         self.id = id
         self.created = created
         self.temperature = temperature
-}
-
-enum CodingKeys: String, CodingKey {
-    case humidity
-    case pollution
-    case id
-    case created
-    case temperature 
-}
+    }
+    
+    enum CodingKeys: String, CodingKey {
+        case humidity
+        case pollution
+        case id
+        case created
+        case temperature 
+    }
 }

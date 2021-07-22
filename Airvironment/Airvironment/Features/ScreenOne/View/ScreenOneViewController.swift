@@ -9,9 +9,11 @@ import UIKit
 
 class ScreenOneViewController: UIViewController {
 
+    
     @IBOutlet weak var date: UILabel!
     @IBOutlet weak var poll: UILabel!
     @IBOutlet weak var hum: UILabel!
+   
     @IBOutlet weak var temp: UILabel!
     
     
@@ -44,5 +46,8 @@ class ScreenOneViewController: UIViewController {
         }}
 
     
-
+    @IBAction func showHistory1(_ sender: Any) {
+        navigationController!.show(ScreenTwoViewController(), sender: nil)
+        
+    }
 }
