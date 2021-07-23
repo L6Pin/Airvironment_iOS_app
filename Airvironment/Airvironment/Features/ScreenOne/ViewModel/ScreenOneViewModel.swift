@@ -12,17 +12,23 @@ class ScreenOneViewModel: BaseViewModel {
     var repository: Repository!
     @objc dynamic var air: Air?
     
+    var timer: Timer!
+    
     
     init (repository: Repository){
         self.repository = repository
     }
     
-    func onViewDidLoad(){
+   
+    
+    override func onViewDidLoad(){
+        super.onViewDidLoad()
         getLatest()
+        self.timer = Timer.scheduledTimer(timeInterval: 600.0, target: self, selector: #selector(getLatest), userInfo:nil, repeats: true)
     }
 
     
-    private func getLatest(){
+    @objc private func getLatest(){
         loading = true
         repository.getLatest(){result in
             switch result{

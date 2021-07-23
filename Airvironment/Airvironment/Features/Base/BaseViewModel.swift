@@ -11,4 +11,6 @@ class BaseViewModel: NSObject {
     
     @objc dynamic var loading: Bool=false
     
+    open func onViewDidLoad() {}
+    
 }

@@ -28,13 +28,12 @@ class ScreenTwoViewController: BaseViewController<ScreenTwoViewModel> {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.register(UINib(nibName: ScreenTwoTableViewCell.reusableIdentifier(), bundle: nil), forCellReuseIdentifier: ScreenTwoTableViewCell.reusableIdentifier())
-        observeLiveData()
-        viewModel.onViewDidLoad()
         // Do any additional setup after loading the view.
     }
     
     
-    private func observeLiveData() {
+    override func observeLiveData() {
+        super.observeLiveData()
         observer = viewModel.observe(\.measurements, options: .new) { _, measurements  in
             if let measurements = measurements.newValue{
                 self.tableView.dataSource = self

@@ -13,16 +13,17 @@ class BaseViewController<T: BaseViewModel>: UIViewController {
     
     var loader: LoaderViewController = LoaderViewController()
     
-    private var observer: NSKeyValueObservation!
+    private var observer1: NSKeyValueObservation!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         observeLiveData()
+        viewModel.onViewDidLoad()
         
     }
     
-    private func observeLiveData() {
-        observer = viewModel.observe(\.loading, options: .new) { _, loading  in
+    open func observeLiveData() {
+        observer1 = viewModel.observe(\.loading, options: .new) { _, loading  in
             if let loading = loading.newValue{
                 if loading == true {
                     self.loader.show()

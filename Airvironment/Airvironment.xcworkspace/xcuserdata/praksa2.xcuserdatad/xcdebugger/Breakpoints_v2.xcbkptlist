@@ -3,4 +3,214 @@
    uuid = "288CA517-3B9C-4A20-A112-82AD0C14EF87"
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "970A22C0-7DF6-48F6-9384-A6C5CC2FA121"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Airvironment/Features/ScreenTwo/ViewModel/ScreenTwoViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "onViewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FABA3B52-0A97-4C4C-A32C-53EBBC4E9A9E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Airvironment/Features/Base/BaseViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A45F3A6B-0326-4E9C-B231-414B7C317D1F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Airvironment/Features/ScreenTwo/View/ScreenTwoViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "observeLiveData()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "A45F3A6B-0326-4E9C-B231-414B7C317D1F - a1eda8bc93db0eab"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Airvironment.ScreenTwoViewController.observeLiveData() -&gt; ()"
+                  moduleName = "Airvironment"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/praksa2/Desktop/Airvironment_iOS_app/Airvironment/Airvironment/Features/ScreenTwo/View/ScreenTwoViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "93">
+               </Location>
+               <Location
+                  uuid = "A45F3A6B-0326-4E9C-B231-414B7C317D1F - d80687067a889065"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Airvironment.ScreenTwoViewModel, Foundation.NSKeyValueObservedChange&lt;Swift.Optional&lt;Swift.Array&lt;Airvironment.Air&gt;&gt;&gt;) -&gt; () in Airvironment.ScreenTwoViewController.observeLiveData() -&gt; ()"
+                  moduleName = "Airvironment"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/praksa2/Desktop/Airvironment_iOS_app/Airvironment/Airvironment/Features/ScreenTwo/View/ScreenTwoViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "101">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5106A120-F432-4FD0-BD4E-E01C0FB0FCCF"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Airvironment/Features/Base/BaseViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "observeLiveData()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "5106A120-F432-4FD0-BD4E-E01C0FB0FCCF - 593b19e5361b3ef0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Airvironment.BaseViewController.observeLiveData() -&gt; ()"
+                  moduleName = "Airvironment"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/praksa2/Desktop/Airvironment_iOS_app/Airvironment/Airvironment/Features/Base/BaseViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "73">
+               </Location>
+               <Location
+                  uuid = "5106A120-F432-4FD0-BD4E-E01C0FB0FCCF - 14a89f847d878a68"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (&#x3c4;_0_0, Foundation.NSKeyValueObservedChange&lt;Swift.Bool&gt;) -&gt; () in Airvironment.BaseViewController.observeLiveData() -&gt; ()"
+                  moduleName = "Airvironment"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/praksa2/Desktop/Airvironment_iOS_app/Airvironment/Airvironment/Features/Base/BaseViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "126">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "35A25E98-E34F-4A04-89E7-E17C7BB5ED1E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Airvironment/Features/ScreenTwo/View/ScreenTwoViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "observeLiveData()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "030D0E99-7EDF-4B51-8A78-E9F2D7221035"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Airvironment/Features/ScreenTwo/View/ScreenTwoViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7708A365-78AA-44A4-8C79-EFBFAC0FDDDA"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Airvironment/Features/ScreenTwo/View/ScreenTwoViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "observeLiveData()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D23DBE6C-604A-4860-86CB-EBB1889E9F3B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Airvironment/Features/ScreenTwo/ViewModel/ScreenTwoViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "getAll()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9ABF9F12-E84B-43D3-B0B5-EEA966322CAC"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Airvironment/Features/ScreenTwo/ViewModel/ScreenTwoViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "getAll()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

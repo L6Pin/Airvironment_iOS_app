@@ -16,7 +16,8 @@ class ScreenTwoViewModel: BaseViewModel{
         self.repository = repository
     }
     
-    func onViewDidLoad(){
+    override func onViewDidLoad() {
+        super.onViewDidLoad()
         getAll()
     }
     

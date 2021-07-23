@@ -29,10 +29,11 @@ class ScreenOneViewController: BaseViewController<ScreenOneViewModel>{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        observeLiveData()
-        viewModel.onViewDidLoad()
-
-        // Do any additional setup after loading the view.
+    }
+    
+    deinit{
+        viewModel.timer.invalidate()
+        viewModel.timer = nil
     }
     
     
@@ -44,7 +45,8 @@ class ScreenOneViewController: BaseViewController<ScreenOneViewModel>{
         self.poll.text = String(air.pollution)
         self.date.text = formater.string(from: air.created)
     }
-    private func observeLiveData() {
+    override func observeLiveData() {
+        super.observeLiveData()
         observer = viewModel.observe(\.air, options: .new) { _, air  in
             if let air = air.newValue{
                 self.superDetail(air: air!)
