@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ScreenOneViewModel: NSObject {
+class ScreenOneViewModel: BaseViewModel {
     
     var repository: Repository!
     @objc dynamic var air: Air?
@@ -23,6 +23,7 @@ class ScreenOneViewModel: NSObject {
 
     
     private func getLatest(){
+        loading = true
         repository.getLatest(){result in
             switch result{
             case .success(let air):
@@ -30,6 +31,8 @@ class ScreenOneViewModel: NSObject {
             case .failure(let error):
             break
             }
+            self.loading = false
+
         }
         
     }

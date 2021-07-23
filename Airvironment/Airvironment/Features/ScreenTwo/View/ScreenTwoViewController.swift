@@ -7,13 +7,21 @@
 
 import UIKit
 
-class ScreenTwoViewController: UIViewController {
+class ScreenTwoViewController: BaseViewController<ScreenTwoViewModel> {
 
  
     @IBOutlet weak var tableView: UITableView!
     
-
-    let viewModel: ScreenTwoViewModel = ScreenTwoViewModel(repository:RepositoryImplementation())
+    
+    init() {
+        super.init(nibName: nil, bundle: nil)
+        viewModel = ScreenTwoViewModel(repository:RepositoryImplementation())
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     
     private var observer: NSKeyValueObservation!
     

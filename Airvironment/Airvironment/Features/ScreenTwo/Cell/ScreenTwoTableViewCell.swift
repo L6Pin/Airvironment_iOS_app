@@ -26,9 +26,9 @@ class ScreenTwoTableViewCell: UITableViewCell {
     }
     
     func configure(measurements: Air){
-        cellHum.text = String( measurements.humidity!)
-        cellPoll.text = String( measurements.pollution!)
-        cellTemp.text = String( measurements.temperature!)
+        cellHum.text = String( measurements.humidity)
+        cellPoll.text = String( measurements.pollution)
+        cellTemp.text = String( measurements.temperature)
 
         
     }

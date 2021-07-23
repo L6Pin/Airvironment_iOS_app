@@ -25,6 +25,12 @@
 		0E7A217526A99D280001FE67 /* ScreenTwoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E7A217326A99D280001FE67 /* ScreenTwoTableViewCell.xib */; };
 		0E7A217926A9B15B0001FE67 /* MetaData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7A217826A9B15B0001FE67 /* MetaData.swift */; };
 		0E7A217B26A9B1E60001FE67 /* MetaArrayResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7A217A26A9B1E60001FE67 /* MetaArrayResponse.swift */; };
+		0EDE820826AAB393004D0483 /* LoaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDE820626AAB393004D0483 /* LoaderViewController.swift */; };
+		0EDE820926AAB393004D0483 /* LoaderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EDE820726AAB393004D0483 /* LoaderViewController.xib */; };
+		0EDE820D26AABCDB004D0483 /* ViewUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDE820C26AABCDB004D0483 /* ViewUtil.swift */; };
+		0EDE821326AABE84004D0483 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDE821226AABE84004D0483 /* BaseViewModel.swift */; };
+		0EDE821526AABEB6004D0483 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDE821426AABEB6004D0483 /* BaseViewController.swift */; };
+		0EDE821726AAF73D004D0483 /* CodableExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDE821626AAF73D004D0483 /* CodableExtensions.swift */; };
 		0EF4CD1D26A96196004C2CD2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF4CD1C26A96196004C2CD2 /* AppDelegate.swift */; };
 		0EF4CD1F26A96196004C2CD2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF4CD1E26A96196004C2CD2 /* SceneDelegate.swift */; };
 		0EF4CD2126A96196004C2CD2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF4CD2026A96196004C2CD2 /* ViewController.swift */; };
@@ -69,6 +75,12 @@
 		0E7A217326A99D280001FE67 /* ScreenTwoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScreenTwoTableViewCell.xib; sourceTree = "<group>"; };
 		0E7A217826A9B15B0001FE67 /* MetaData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetaData.swift; sourceTree = "<group>"; };
 		0E7A217A26A9B1E60001FE67 /* MetaArrayResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetaArrayResponse.swift; sourceTree = "<group>"; };
+		0EDE820626AAB393004D0483 /* LoaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderViewController.swift; sourceTree = "<group>"; };
+		0EDE820726AAB393004D0483 /* LoaderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoaderViewController.xib; sourceTree = "<group>"; };
+		0EDE820C26AABCDB004D0483 /* ViewUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewUtil.swift; sourceTree = "<group>"; };
+		0EDE821226AABE84004D0483 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		0EDE821426AABEB6004D0483 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		0EDE821626AAF73D004D0483 /* CodableExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableExtensions.swift; sourceTree = "<group>"; };
 		0EF4CD1926A96196004C2CD2 /* Airvironment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Airvironment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EF4CD1C26A96196004C2CD2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0EF4CD1E26A96196004C2CD2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -163,6 +175,8 @@
 		0E1F4F3426A96BCA00564A5B /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				0EDE821126AABE3E004D0483 /* Base */,
+				0EDE820426AAB343004D0483 /* Loader */,
 				0E7A216326A99C180001FE67 /* ScreenTwo */,
 				0E1F4F3526A96BD700564A5B /* ScreenOne */,
 			);
@@ -231,6 +245,41 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		0EDE820426AAB343004D0483 /* Loader */ = {
+			isa = PBXGroup;
+			children = (
+				0EDE820526AAB362004D0483 /* View */,
+			);
+			path = Loader;
+			sourceTree = "<group>";
+		};
+		0EDE820526AAB362004D0483 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0EDE820626AAB393004D0483 /* LoaderViewController.swift */,
+				0EDE820726AAB393004D0483 /* LoaderViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0EDE820A26AABCA9004D0483 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				0EDE820C26AABCDB004D0483 /* ViewUtil.swift */,
+				0EDE821626AAF73D004D0483 /* CodableExtensions.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		0EDE821126AABE3E004D0483 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				0EDE821226AABE84004D0483 /* BaseViewModel.swift */,
+				0EDE821426AABEB6004D0483 /* BaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		0EF4CD1026A96196004C2CD2 = {
 			isa = PBXGroup;
 			children = (
@@ -256,6 +305,7 @@
 		0EF4CD1B26A96196004C2CD2 /* Airvironment */ = {
 			isa = PBXGroup;
 			children = (
+				0EDE820A26AABCA9004D0483 /* Util */,
 				0E1F4F3426A96BCA00564A5B /* Features */,
 				0E1F4F2E26A96A8100564A5B /* Repository */,
 				0E1F4F1F26A9636C00564A5B /* RemoteDataSource */,
@@ -410,6 +460,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0EF4CD2926A96197004C2CD2 /* LaunchScreen.storyboard in Resources */,
+				0EDE820926AAB393004D0483 /* LoaderViewController.xib in Resources */,
 				0E7A216926A99C730001FE67 /* ScreenTwoViewController.xib in Resources */,
 				0E7A217526A99D280001FE67 /* ScreenTwoTableViewCell.xib in Resources */,
 				0EF4CD2626A96197004C2CD2 /* Assets.xcassets in Resources */,
@@ -481,10 +532,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E1F4F3A26A96BFF00564A5B /* ScreenOneViewController.swift in Sources */,
+				0EDE821326AABE84004D0483 /* BaseViewModel.swift in Sources */,
 				0E1F4F2426A9645500564A5B /* AlamoFileDataSource.swift in Sources */,
 				0E1F4F2B26A967F300564A5B /* RemoteDataSourceImplementation.swift in Sources */,
 				0EF4CD2126A96196004C2CD2 /* ViewController.swift in Sources */,
+				0EDE821526AABEB6004D0483 /* BaseViewController.swift in Sources */,
 				0EF4CD1D26A96196004C2CD2 /* AppDelegate.swift in Sources */,
+				0EDE820D26AABCDB004D0483 /* ViewUtil.swift in Sources */,
 				0E1F4F2D26A9681300564A5B /* RemoteDataSource.swift in Sources */,
 				0E7A217426A99D280001FE67 /* ScreenTwoTableViewCell.swift in Sources */,
 				0E1F4F2226A9640E00564A5B /* Router.swift in Sources */,
@@ -493,7 +547,9 @@
 				0E1F4F3D26A96C0D00564A5B /* ScreenOneViewModel.swift in Sources */,
 				0EF4CD1F26A96196004C2CD2 /* SceneDelegate.swift in Sources */,
 				0E7A217926A9B15B0001FE67 /* MetaData.swift in Sources */,
+				0EDE820826AAB393004D0483 /* LoaderViewController.swift in Sources */,
 				0E7A216826A99C730001FE67 /* ScreenTwoViewController.swift in Sources */,
+				0EDE821726AAF73D004D0483 /* CodableExtensions.swift in Sources */,
 				0E1F4F3026A96A9A00564A5B /* Repository.swift in Sources */,
 				0E7A217B26A9B1E60001FE67 /* MetaArrayResponse.swift in Sources */,
 				0E7A216C26A99C8E0001FE67 /* ScreenTwoViewModel.swift in Sources */,

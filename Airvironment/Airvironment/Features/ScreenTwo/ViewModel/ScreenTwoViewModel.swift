@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ScreenTwoViewModel: NSObject{
+class ScreenTwoViewModel: BaseViewModel{
     
     var repository: Repository!
     @objc dynamic var measurements: Array<Air>?
@@ -21,6 +21,7 @@ class ScreenTwoViewModel: NSObject{
     }
     
     private func getAll(){
+        loading = true
         repository.getAll(){result in
             switch result{
             case .success(let measurements):
@@ -28,6 +29,7 @@ class ScreenTwoViewModel: NSObject{
             case .failure(let error):
             print(error)
             }
+            self.loading = false
         }}
     
 

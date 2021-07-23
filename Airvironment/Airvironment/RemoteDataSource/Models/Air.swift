@@ -8,13 +8,13 @@
 import UIKit
 
 class Air: NSObject, Codable {
-    var humidity: Float?
-    var pollution: Float?
-    var id: Int?
-    var created:String?
-    var temperature: Float?
+    var humidity: Float
+    var pollution: Float
+    var id: Int
+    var created:Date
+    var temperature: Float
     
-    init(humidity: Float, pollution:Float, id:Int, created:String, temperature: Float) {
+    init(humidity: Float, pollution:Float, id:Int, created:Date, temperature: Float) {
         self.humidity = humidity
         self.pollution = pollution
         self.id = id

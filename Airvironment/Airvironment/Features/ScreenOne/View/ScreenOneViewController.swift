@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ScreenOneViewController: UIViewController {
+class ScreenOneViewController: BaseViewController<ScreenOneViewModel>{
 
     
     @IBOutlet weak var date: UILabel!
@@ -16,8 +16,14 @@ class ScreenOneViewController: UIViewController {
    
     @IBOutlet weak var temp: UILabel!
     
+    init() {
+        super.init(nibName: nil, bundle: nil)
+        viewModel = ScreenOneViewModel(repository:RepositoryImplementation())
+    }
     
-    let viewModel: ScreenOneViewModel = ScreenOneViewModel(repository:RepositoryImplementation())
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     private var observer: NSKeyValueObservation!
     
@@ -31,10 +37,12 @@ class ScreenOneViewController: UIViewController {
     
     
     private func superDetail(air:Air) {
-        self.temp.text = String(air.temperature!)
-        self.hum.text = String(air.humidity!)
-        self.poll.text = String(air.pollution!)
-        self.date.text = String(air.created!)
+        var formater = DateFormatter()
+        formater.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        self.temp.text = String(air.temperature)
+        self.hum.text = String(air.humidity)
+        self.poll.text = String(air.pollution)
+        self.date.text = formater.string(from: air.created)
     }
     private func observeLiveData() {
         observer = viewModel.observe(\.air, options: .new) { _, air  in

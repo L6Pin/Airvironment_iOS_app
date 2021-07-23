@@ -17,6 +17,7 @@ class AlamoFireDataSource: RemoteDataSource {
             case.success(_):
                 do {
                     let jsonDecoder = JSONDecoder()
+                    jsonDecoder.dateDecodingStrategy = .custom(JSONDecoder.dateDecodingStrategy)
                     let responseBody: Air = try jsonDecoder.decode(Air.self, from: serverResponse.data!) as Air
                     result(.success(responseBody))
                 } catch let error {
@@ -36,8 +37,10 @@ class AlamoFireDataSource: RemoteDataSource {
             case.success(_):
                 do {
                     let jsonDecoder = JSONDecoder()
+                    
                     let responseBody: MetaArrayResponse = try jsonDecoder.decode(MetaArrayResponse.self, from: serverResponse.data!) as MetaArrayResponse
                     result(.success(responseBody.response))
+                    
                 } catch let error {
                     result(.failure(error))
                 }
